@@ -39,9 +39,14 @@ function Page() {
         console.log("Form submitted");
     };
     return (
-        <div className="flex items-center justify-center min-h-screen pt-[6rem] pb-[4rem]">
-            <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black mt-200">
-          
+        <div>
+            <h1 className="text-lg md:text-7xl text-center font-sans font-bold text-white pt-[8rem]">
+          Contact Us
+        </h1>
+        <div className="flex items-center justify-center min-h-screen pb-[4rem] ">
+            
+            <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black mt-200 bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 ">
+            
                 <form className="my-8" onSubmit={handleSubmit}>
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                         <LabelInputContainer>
@@ -94,9 +99,12 @@ function Page() {
                         
                     </div>
                 </form>
-                <Meteors number={35} />
+              
             </div>
+            <Meteors number={35} />
         </div>
+        </div>
+        
     );
 }
 
